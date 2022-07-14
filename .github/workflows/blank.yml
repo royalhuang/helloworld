@@ -42,4 +42,6 @@ jobs:
       - name: Run a one-line script
         run: |
           echo ${{ steps.generate_number.outputs.random_number }}
+          echo ${{ steps.generate_number.outputs.random_number[0] }}
+          echo ${{ steps.generate_number[0].outputs.random_number }}
           
